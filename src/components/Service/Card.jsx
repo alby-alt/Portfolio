@@ -25,6 +25,7 @@ height: 100%;
     width: 100%;
     /* background: linear-gradient(159deg, rgb(45, 45, 58) 0%, rgb(43, 43, 53) 100%); */
     /* padding: 1rem; */
+    /* */
     text-align: center;
     position: relative;
   border: 1px solid rgba(0, 0, 0, 0.1);
