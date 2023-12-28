@@ -1,6 +1,6 @@
 
-import { MdDesignServices } from "react-icons/md";
-import { FiCodesandbox } from "react-icons/fi";
+import { MdDesignServices, MdPhoneIphone, MdAndroid, MdPhoneAndroid, MdSmartphone, MdTabletAndroid } from "react-icons/md";
+import { FiCodesandbox, FiSmartphone } from "react-icons/fi";
 import { CgWebsite } from "react-icons/cg";
 import Work2 from "./assets/work2.jpg";
 import Work3 from "./assets/work3.jpg";
@@ -21,6 +21,11 @@ import Image1 from "./assets/testimonial1.png";
 import Image2 from "./assets/testimonial2.png";
 import Image3 from "./assets/testimonial3.png";
 import CV from "./assets/BrixDeluteCV.pdf";
+
+// Steven Changes
+import Image4 from './assets/ANDROIDSTUDIO.png'
+import profileImage from './assets/profile.jpg'
+import CV2 from './assets/MARK_STEVEN_ALBA.pdf'
 
 //Dev
 export const API_URL = "https://bugtech.solutions/v1";
@@ -76,6 +81,15 @@ export const Services = [
     description:
     "Writing code to create the server-side components of web applications. This includes working with technologies such as NodeJS, Express, Typescript to create APIs, databases, AWS, Microservices and web servers.",
     icon: CgWebsite
+  },
+  {
+    id:4,
+    image: MdPhoneIphone,
+    title: `MongoDB Realm SDK (Offline-first)`,
+    description:
+    "Our project aims to develop a mobile application using React Native SDK and MongoDB Realm, with a focus on implementing an offline-first architecture. The application will provide users with a seamless and responsive experience, even in scenarios where an internet connection is intermittent or unavailable.",
+    icon: MdPhoneAndroid,
+    // image: MdPhoneIphone
   },
  
 ]
@@ -255,19 +269,20 @@ export const SKILLS = [
 
 export const PROFILES = [
     {
-        username: "jaybeegeli",
-        email: "jb@yahoo.com",
+        username: "stevenAlba",
+        email: "marksteven.alba@gmail.com",
         profile: {
-            cover: IDPIC,
-            nickname: "brix",
-            firstName: "Brix",
-            lastName: "Delute",
+            cover: profileImage,
+            nickname: "Steven",
+            firstName: "Mark Steven",
+            lastName: "Alba",
             position: [
               "Software Engineer",
               "Backend Developer",
               "Front End Developer",
               "Full Stack Developer",
-              "React Js Developer"
+              "React Js Developer",
+              "Mobile Developer (Android && IOS)"
             ],
             bio: "I'm a creative software developer based in Tacloban City, Philippines, with a passion for creating innovative tools and systems. I have a background in accounting and a solid foundation in Full Stack Development, including expertise in HTML, CSS, JavaScript, React, Node.js, AWS, Microservices, RestAPI, and Databases.",
         },    
@@ -288,14 +303,14 @@ export const PROFILES = [
                         title: "",
                         subtitle: "",
                         description: "",
-                        link: "https://www.linkedin.com/in/brix-delute",
+                        link: "https://www.linkedin.com/in/mark-steven-alba-9b55a9274/",
                         icon: "uil uil-linkedin",
                       },
                       {
                           title: "",
                           subtitle: "",
                           description: "",
-                          link: "https://www.facebook.com/brixxdelute/",
+                          link: "https://www.facebook.com/throwNewError404/",
                           icon: "uil uil-facebook",
                         }
                 ]
@@ -307,22 +322,22 @@ export const PROFILES = [
                 contents: [
                     {
                       title: "Email",
-                      subtitle: "brix.delute.official20@gmail.com",
+                      subtitle: "marksteven.alba@gmail.com",
                       description: "",
-                      link: "mailto:brix.delute.official20@gmail.com",
+                      link: "mailto:marksteven.alba@gmail.com",
                       icon: "bx bx-mail-send",
                     },
                     {
                         title: "Whatsapp",
-                        subtitle: "+639948726036",
+                        subtitle: "+639659868434JJ",
                         description: "",
                         link: "",
                         icon: "bx bxl-whatsapp",
                       },{
                         title: "Skype",
-                        subtitle: "brix.delute.official20@gmail.com",
+                        subtitle: "marksteven.alba@gmail.com",
                         description: "",
-                        link: "https://join.skype.com/invite/ywfxqv9NGiPP",
+                        link: "https://join.skype.com/u2WqPfBW8fRw",
                         icon: "bx bxl-skype",
                       },
                       // {
@@ -339,7 +354,7 @@ export const PROFILES = [
                 title: "About Me",
                 subtitle: "My Introduction",
                 description: "I believe that my unique combination of accounting knowledge and Full Stack Development skills allows me to bring added value to any project. My goal is to use my expertise to create cutting-edge accounting tools and systems that streamline financial processes and improve the user experience.",
-                link: CV,
+                link: CV2,
                 // cover: IDPIC,
                 contents: [
                     {
@@ -408,8 +423,8 @@ export const PROFILES = [
             {
               type: "education",
               title: "ASIAN DEVELOPMENT FOUNDATION COLLEGE",
-              subtitle: "BACHELOR OF SCIENCE IN HOTEL & RESTAURANT MANAGEMENT",
-              description: "2016-2020",
+              subtitle: "BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION",
+              description: "2015-2020",
               link: "",
               cover: "",
               contents: []
@@ -418,27 +433,29 @@ export const PROFILES = [
               type: "education",
               title: "Leyte National High School",
               subtitle: "Diploma - Secondary",
-              description: "2010-2014",
-              link: "",
-              cover: "",
-              contents: []
-            },{
-              type: "experience",
-              title: "PRULIFE UK Insurance",
-              subtitle: "Full Stack Developer",
-              description: "March 2021 - February 2023",
-              link: "",
-              cover: "",
-              contents: []
-            },{
-              type: "experience",
-              title: "IT MATTERS",
-              subtitle: "Web Developer",
-              description: "April 2018 - January 2021",
+              description: "2008-2012",
               link: "",
               cover: "",
               contents: []
             },
+            {
+              type: "experience",
+              title: "Highly Succeed",
+              subtitle: "Full Stack Developer",
+              description: "June 2022 - May 2023",
+              link: "https://www.mwell.com.ph/",
+              cover: "",
+              contents: []
+            },
+            {
+              type: "experience",
+              title: "IT MATTERS",
+              subtitle: "Web Developer",
+              description: "April 2018 - January 2022",
+              link: "",
+              cover: "",
+              contents: []
+            }
           ]
       }
     ]
